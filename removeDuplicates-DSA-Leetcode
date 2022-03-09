@@ -1,3 +1,5 @@
+https://leetcode.com/problems/remove-duplicates-from-sorted-list/    Level - Easy 
+
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         sentinel = head
@@ -13,8 +15,8 @@ class Solution:
         return sentinel
         
   
-  Tweak the above code to meet the below problem requirements
-  https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+  Tweak the above code to meet the below problem requirements            
+  https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/           Level - Medium
   
   class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
