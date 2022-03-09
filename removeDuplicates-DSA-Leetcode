@@ -1,0 +1,33 @@
+class Solution:
+    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        sentinel = head
+        node = None
+        while head :
+            if head.next and head.val == head.next.val:
+                node = head # this is the pointer to one copy of the value 
+                while head.next and head.val == head.next.val:
+                    head = head.next
+                node.next = head.next
+            else:
+                head = head.next
+        return sentinel
+        
+  
+  Tweak the above code to meet the below problem requirements
+  https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+  
+  class Solution:
+    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        sentinel = ListNode(0,head)
+        pred = sentinel # this will hold the pointer to  non-duplicate element
+        
+        while head:
+            if head.next and head.next.val == head.val:
+                while head.next and head.val == head.next.val: # loop through till we find the next unique valued Node
+                    head = head.next
+                pred.next = head.next # attach the pred.next to unique next node val
+            else:
+                pred = pred.next
+            head = head.next
+        return sentinel.next
+        
