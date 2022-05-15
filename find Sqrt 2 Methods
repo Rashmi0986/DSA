@@ -1,0 +1,24 @@
+First Method: We can iterate through all numbers from 0 to x, and get the greatest number i such that i*i <= x. The time complexity is O(sqrt(x)) for this method. 
+
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        for i in range(x + 1):
+            if i*i == x:
+                return i
+            if i*i > x:
+                return i - 1
+                
+Second Method: We can do a binary search that finds the greatest number m such that m*m <= x. The time complexity is O(logx) for this method.
+
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        l, r = 0, x
+        while l <= r:
+            m = (l + r) // 2
+            if m * m == x:
+                return m
+            if m * m < x:
+                l = m + 1
+            else:
+                r = m - 1
+        return r
