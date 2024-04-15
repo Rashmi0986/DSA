@@ -20,7 +20,7 @@ class Fibonacci:
         
         # here including the recusrion call the Extra computation is done 
         # so it is not consdiered as tail recursion .
-        
+
         return self.Fib(n-1) + self.Fib(n-2)
 
 
@@ -51,7 +51,7 @@ if __name__ == "__main__":
 
 #Some Notes :
 """
-Tail recrusion 
+Tail recursion 
 
 when we have last call to the print function that is called Tail recursion . 
 Example below 
