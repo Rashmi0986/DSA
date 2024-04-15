@@ -3,6 +3,7 @@ def myprint(n):
         print(n)
         return 
     print(n)
+    #Tail Recursion 
     myprint(n+1)
 
 if __name__ == "__main__":
