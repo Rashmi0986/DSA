@@ -1,0 +1,44 @@
+Steps :
+
+1. Identify of I can break the problem in to samller problem 
+2. Form the reccurence relation if needed 
+3. Draw the recursion tree if needed 
+4. About the tree 
+    1. See the flow of function 
+    2. how they are getting in the stack 
+    3. identify and process on Left tree and right tree calls 
+
+    See the last note below 
+    4. Identify if there are any repeated computation 
+    5. In the optimisation step(dp) use the Cache to retrieve the stored values 
+
+Treeview will help you with identifying the problem easily . 
+
+Very important Notes :
+
+Use a pen and paper to draw the  tree and analyse it 
+Use a debugger to understand the flow 
+
+
+Couple of problems related to Recursion 
+1. Binary Search 
+
+    Notes :
+       Comparisions - O(1)
+       Dividing the array into two halves 
+       Recurence relation for Binary Search = F(N) + F(N/2)
+
+Types of Reccurence relation 
+1. Linear - Fibonacci
+2. Divide and Conquer - Binary Search 
+
+
+Dynamic Programming: to solve the repeated computation [Using space optimisation- or reducing no of  calls to the function]
+
+If in a recursion call multiple computations are replicated 
+Then dont compute the solution often instead cache it for the re-use in future 
+
+
+
+
+
