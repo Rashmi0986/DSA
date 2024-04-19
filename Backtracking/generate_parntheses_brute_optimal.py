@@ -1,7 +1,9 @@
 """
 Contraints : while generating the parenthese
             Open == closed
-            closed < open
+            open < n = add the Opening parentheses
+            closed < open add the closing parentheses
+            Learn't from this video = https://www.youtube.com/watch?v=s9fokUqJ76A
 """
 
 #Bruteforce code
