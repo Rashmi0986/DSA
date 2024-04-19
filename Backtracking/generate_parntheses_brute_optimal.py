@@ -1,3 +1,9 @@
+"""
+Contraints : while generating the parenthese
+            Open == closed
+            closed < open
+"""
+
 #Bruteforce code
 def generate_valid_parentheses(n):
     def is_valid(s):
