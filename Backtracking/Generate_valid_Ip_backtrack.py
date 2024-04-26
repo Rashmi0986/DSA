@@ -38,3 +38,10 @@ if __name__ == '__main__':
     valid_id = s.restoreIpAddresses(input_str)
     for id in valid_id:
         print(id)
+
+
+
+"""
+Simple approach from neetcode (do reffer )
+https://www.youtube.com/watch?v=61tN4YEdiTM
+"""
