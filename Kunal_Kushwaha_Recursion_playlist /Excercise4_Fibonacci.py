@@ -67,6 +67,31 @@ def f(n):
     return a
 
 
+Variant : Study Drill - Climbing stairs
+class Solution:
+    def climbStairs(self,n):
+        f1 = 1
+        f2 = 2
+        if n == 1: 
+           return f1
+        if n == 2:
+            return f2
+        else:
+            i = 2 # here i made a mistake initiliasation mistake shopuld be avoided 
+            while i < n:
+                fib = f1 + f2
+                f1 = f2
+                f2 = fib
+                i += 1
+        return fib 
+
+# new Solution using Fibonaccii  TC = o(n), SC = O(1)
+
+  
+        
+                
+   
+
 
 #Some Notes :
 """
