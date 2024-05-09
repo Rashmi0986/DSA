@@ -49,6 +49,25 @@ if __name__ == "__main__":
     Test.TestFib(FibObj.Fib)
 
 
+
+#without recrusion but stack 
+def fibs(n):                                                                                                 
+    fibs = [0, 1, 1]                                                                                           
+    for f in range(2, n):                                                                                      
+        fibs.append(fibs[-1] + fibs[-2])                                                                         
+    return fibs[n]
+
+
+#without recursion O(1) space 
+
+def f(n):
+    a, b = 0, 1
+    for i in range(0, n):
+        a, b = b, a + b
+    return a
+
+
+
 #Some Notes :
 """
 Tail recursion 
