@@ -1,7 +1,8 @@
 # The above code will solve the Total Components  in each Island and 
 """
    1. we can then apply set operation to find the distinct Island 
-   2. To Find the biggest and Smallest Island as well 
+   2. we can  find the biggest and Smallest Island as well .
+   3. We can also find the total number of connected components - algo - just collect all components and count islandsize>1 - we have the answer.
 """
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
