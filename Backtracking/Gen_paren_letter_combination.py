@@ -14,6 +14,27 @@ def letter_combination(n: int) -> List[str]:
     dfs()
     return res
 
+def letter_combination(n):
+    res = []
+
+    def dfs(path=[]):
+        if len(path) == n:
+            res.append("".join(path))
+            return
+
+        for letter in "123":
+            path.append(letter)
+            dfs(path)
+            path.pop()
+
+    dfs()
+    return res
+    
+print(letter_combination(3))
+
+['111', '112', '113', '121', '122', '123', '131', '132', '133', '211', '212', '213', '221', 
+ '222', '223', '231', '232', '233', '311', '312', '313', '321', '322', '323', '331', '332', '333']
+
 
 #Similarly for generate valid Parentheses
 
