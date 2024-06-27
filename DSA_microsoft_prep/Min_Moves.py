@@ -13,9 +13,24 @@ def minMoves(s):
 s = "baaaab"
 print(minMoves(s))
 
+
+"""
+for the above same problem to get the exact string 
+def filter_string(s: str) -> str:
+    news = s[0:2]
+    for i in range(2, len(s)):
+        # Do not append if the previous chars are the same
+        if s[i] != s[i - 1] or s[i] != s[i - 2]:
+            news += s[i]
+    return news
+
+if __name__ == '__main__':
+   s = input()
+   res = filter_string(s)
+   print(res)
+"""
+
 Ref
 https://molchevskyi.medium.com/microsoft-interview-tasks-min-moves-to-make-string-without-3-identical-consecutive-letters-abe61ed51a10
 
 
-
-    
